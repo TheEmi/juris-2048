@@ -1,9 +1,15 @@
 const board = (props, context) => {
   const { getState, setState } = context;
   function initBoard() {
-    let cells = Array(4).fill(Array(4).fill(0));
-    cells[0][0] = 2;
-    cells[0][1] = 2;
+    let cells = Array(4).fill(null).map(() => Array(4).fill(0));
+    cells[Math.floor(Math.random() * 4)][Math.floor(Math.random() * 4)] = 2;
+    let i = Math.floor(Math.random() * 4);
+    let j = Math.floor(Math.random() * 4);
+    while (cells[i][j] !== 0) {
+      i = Math.floor(Math.random() * 4);
+      j = Math.floor(Math.random() * 4);
+    }
+    cells[i][j] = 2;
     setState("cells", cells);
   }
   if (getState("cells", null) === null) {
