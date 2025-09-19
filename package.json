@@ -1,0 +1,19 @@
+{
+  "name": "juris-2048",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.6"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "juris": "^0.9.0",
+    "tailwindcss": "^4.1.13"
+  }
+}

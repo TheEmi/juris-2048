@@ -1,0 +1,5 @@
+/* 2048 tile animation styles */
+.tile {
+	transition: transform 0.1s cubic-bezier(0.4, 0.0, 0.2, 1), background 0.2s;
+}
+@import "tailwindcss";
